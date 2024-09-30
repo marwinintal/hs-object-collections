@@ -1,0 +1,39 @@
+{
+    "name": "marwinupstreamtech/hubspot-object-collections",
+    "description": "PHP package for the HubSpot V3",
+    "type": "library",
+    "homepage": "https://github.com/marwinupstreamtech/hubspot-object-collections",
+    "version": "1.0.1",
+    "require": {
+        "php": "^8.1",
+        "guzzlehttp/guzzle": "^7.4",
+        "nesbot/carbon": "^2.58"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "barryvdh/laravel-ide-helper": "^2.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "HubSpot\\ObjectCollection\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HubSpot\\ObjectCollection\\HubSpotServiceProvider"
+            ],
+            "aliases": {
+                "HubSpotObjectCollection": "HubSpot\\ObjectCollection\\HubSpotObjectCollection"
+            }
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marwin Intal",
+            "email": "marwin@upstreamtech.io"
+        }
+    ],
+    "minimum-stability": "stable"
+}

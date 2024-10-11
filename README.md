@@ -31,7 +31,3 @@ Description: To collect the HubSpot CRM objects[companies, contacts, deals, feed
  */
 $sourceSdk = new HubSpotObjectCollection();
 $contacts = $sourceSdk->getCollection('contacts', ['hs_object_id', 'email']);
-
-## Organization
-
-* Upstreamtech/JackTaylorGroup
